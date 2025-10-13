@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "ui-core": {
+
       "projectType": "library",
       "root": "projects/ui-core",
       "sourceRoot": "projects/ui-core/src",
@@ -44,11 +45,24 @@
             "compodoc": false,
             "outputDir": "storybook-static"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ui-core/**/*.ts",
+              "projects/ui-core/**/*.html"
+            ],
+            "eslintConfig": "projects/ui-core/eslint.config.js"
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "schematicCollections": [
+      "angular-eslint"
+    ]
   }
 }
