@@ -1,0 +1,38 @@
+@use "tokens/variables" as v;
+
+$p-button-default: 0 v.$size-layout-padding-x 0 v.$size-layout-padding-x;
+$btn-height-small: v.$size-height-m;
+$btn-height-medium: v.$size-height-x;
+$btn-height-large: v.$size-height-xl;
+//$b-r-button-default: $b-r-soft;
+
+:host {
+  display: inline-flex;
+
+  &[aria-disabled='true'] {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+.btn-native {
+  all: initial;
+  padding: $p-button-default;
+  border: 1px solid #b4d4ba;
+}
+
+// Sizes
+:host(.m-button--s) .btn-native {
+  min-height: $btn-height-small;
+  max-height: $btn-height-small;
+}
+
+:host(.m-button--m) .btn-native {
+  min-height: $btn-height-medium;
+  max-height: $btn-height-medium;
+}
+
+:host(.m-button--l) .btn-native {
+  min-height: $btn-height-large;
+  max-height: $btn-height-large;
+}
