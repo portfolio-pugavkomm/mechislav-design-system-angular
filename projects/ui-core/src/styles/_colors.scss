@@ -1,0 +1,9 @@
+@use './tokens/variables' as v;
+
+$bgr: v.$color-neutral-black;
+$color-font: v.$color-neutral-white;
+
+html, body {
+  background-color: $bgr;
+  color: $color-font;
+}

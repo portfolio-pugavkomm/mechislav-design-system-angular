@@ -1,11 +1,12 @@
-@use "tokens/variables" as v;
+@use "theme" as t;
+@import "tokens/variables";
 
-$p-button-default: 0 v.$size-layout-padding-x 0 v.$size-layout-padding-x;
-$btn-height-small: v.$size-height-m;
-$btn-height-medium: v.$size-height-x;
-$btn-height-large: v.$size-height-xl;
+
+$p-button-default: 0 t.$p-x 0 t.$p-x;
+$btn-height-small: t.$h-m;
+$btn-height-medium: t.$h-x;
+$btn-height-large: t.$h-xl;
 //$b-r-button-default: $b-r-soft;
-
 :host {
   display: inline-flex;
 
@@ -18,8 +19,9 @@ $btn-height-large: v.$size-height-xl;
 .btn-native {
   all: initial;
   padding: $p-button-default;
-  border: 1px solid #b4d4ba;
+  border: 1px solid black;
 }
+
 
 // Sizes
 :host(.m-button--s) .btn-native {

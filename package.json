@@ -2,6 +2,7 @@
   "name": "mechislav-design-system-angular",
   "version": "0.0.0",
   "scripts": {
+    "compodoc": "npx compodoc -p tsconfig.doc.json",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -9,7 +10,10 @@
     "lint": "ng lint",
     "test": "ng test",
     "build:tokens": "npx style-dictionary build -c style-dictionary.config.js",
-    "prepare": "husky"
+    "prepare": "husky",
+    "compodoc:build": "compodoc -p tsconfig.doc.json",
+    "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+    "compodoc:serve": "compodoc -s"
   },
   "prettier": {
     "printWidth": 100,
@@ -42,6 +46,7 @@
     "@angular/compiler-cli": "^20.3.0",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
+    "@compodoc/compodoc": "^1.1.31",
     "@types/jasmine": "~5.1.0",
     "angular-eslint": "20.4.0",
     "eslint": "^9.37.0",
