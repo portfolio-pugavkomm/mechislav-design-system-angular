@@ -28,24 +28,6 @@
             "tsConfig": "projects/ui-core/tsconfig.spec.json"
           }
         },
-        "storybook": {
-          "builder": "@storybook/angular:start-storybook",
-          "options": {
-            "configDir": "projects/ui-core/.storybook",
-            "browserTarget": "ui-core:build",
-            "compodoc": false,
-            "port": 6006
-          }
-        },
-        "build-storybook": {
-          "builder": "@storybook/angular:build-storybook",
-          "options": {
-            "configDir": "projects/ui-core/.storybook",
-            "browserTarget": "ui-core:build",
-            "compodoc": false,
-            "outputDir": "storybook-static"
-          }
-        },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {

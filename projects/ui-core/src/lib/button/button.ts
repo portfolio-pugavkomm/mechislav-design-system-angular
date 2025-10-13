@@ -4,7 +4,7 @@ export type ButtonVariant = 'primary' | 'secondary' | 'linked' | 'canceled';
 export type ButtonSize = 's' | 'm' | 'l'; // small, medium (default), large
 
 @Component({
-  selector: 'm-button',
+  selector: 'lib-button',
   imports: [],
   templateUrl: './button.html',
   styleUrl: './button.scss'
