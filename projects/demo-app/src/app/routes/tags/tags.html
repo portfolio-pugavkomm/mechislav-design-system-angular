@@ -1,0 +1,6 @@
+<h1>Tags</h1>
+<div class="tags-container">
+  @for (label of labels; track label.label) {
+    <m-tag [variant]="label.variant">{{ label.label }}</m-tag>
+  }
+</div>

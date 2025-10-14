@@ -4,6 +4,8 @@
 @forward "border-radiuis";
 @forward "colors";
 @forward "typography";
+@forward "borders";
+@forward "gap";
 
 @mixin body-style($weight-name, $size-name) {
   $weight-value: map-get(typ.$font-weights, $weight-name);
@@ -16,5 +18,5 @@
 
 * {
   box-sizing: border-box;
-   font-family: typ.$font-primary;
+   font-family: typ.$font-primary ;
 }

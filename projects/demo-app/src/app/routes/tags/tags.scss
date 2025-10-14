@@ -1,0 +1,11 @@
+@use 'theme' as t;
+
+$gap-between-tags: t.$gap-x;
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $gap-between-tags;
+}
+
