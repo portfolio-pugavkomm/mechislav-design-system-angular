@@ -1,6 +1,14 @@
 <h1>Just demo example</h1>
 
-<a routerLink="buttons">Buttons</a>
-<a routerLink="tags">Tags</a>
-
+<div class="navigation-btns-container">
+  @for (link of links(); track link.url) {
+    <me-button
+      [variant]="rla.isActive ? 'primary': 'secondary'"
+      [routerLink]="link.url"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{exact: true}"
+      #rla="routerLinkActive">{{ link.label }}
+    </me-button>
+  }
+</div>
 <router-outlet/>

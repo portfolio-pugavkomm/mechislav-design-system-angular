@@ -1,8 +1,9 @@
 <div class="buttons-container">
   @for (size of buttonSizes; track size) {
-    <div class="button-container">
-      <p>Primary button</p>
-      <m-button variant="primary" [size]="size">Click me ({{size}})</m-button>
-    </div>
+    @for (variant of buttonVariants(); track variant) {
+      <div class="button-container">
+        <me-button [variant]="variant" [size]="size">Click me ({{ size }}, {{ variant }})</me-button>
+      </div>
+    }
   }
 </div>
