@@ -1,6 +1,3 @@
-// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
-import storybook from "eslint-plugin-storybook";
-
 // @ts-check
 const eslint = require("@eslint/js");
 const tseslint = require("typescript-eslint");
@@ -42,5 +39,6 @@ module.exports = tseslint.config(
       ...angular.configs.templateAccessibility,
     ],
     rules: {},
-  }
+  },
+  // You can include your storybook configuration here as well
 );
