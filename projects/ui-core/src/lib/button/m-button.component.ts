@@ -13,10 +13,10 @@ export type ButtonSize = 's' | 'm' | 'l'; // small, medium (default), large
 @Component({
   selector: 'm-button',
   imports: [],
-  templateUrl: './button.html',
-  styleUrl: './button.scss'
+  templateUrl: './m-button.component.html',
+  styleUrl: './m-button.component.scss'
 })
-export class Button {
+export class MButton {
 
   /**
    * Disable button
