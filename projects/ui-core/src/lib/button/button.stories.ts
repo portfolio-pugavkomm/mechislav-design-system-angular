@@ -14,7 +14,8 @@ const meta: Meta<Button> = {
       options: ['primary', 'secondary', 'linked', 'canceled'],
       description: 'Button variant',
     },
-    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     label: {
       control: 'text',
       description: 'The text displayed inside the button.',
@@ -79,7 +80,7 @@ export const Canceled: Story = {
     template: _buttonTemplate,
   }),
   args: {
-    variant: 'canceled',
+    variant: 'canceled'/Users/mechislavpugavko/Develop/mechislav-design-system-angular/projects/ui-core/src/stories/button.component.ts,
     size: 'm',
     disabled: false,
   },
