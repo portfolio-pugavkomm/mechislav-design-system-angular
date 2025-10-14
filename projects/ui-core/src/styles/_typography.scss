@@ -1,0 +1,136 @@
+@use 'tokens/variables' as v;
+// Font families names
+$font-family-base: 'Inter';
+$font-family-logo: 'Bakbak One';
+// Font weights
+$fw-thin: v.$typography-font-weight-thin;
+$fw-extra-light: v.$typography-font-weight-extra-light;
+$fw-light: v.$typography-font-weight-light;
+$fw-regular: v.$typography-font-weight-regular;
+$fw-medium: v.$typography-font-weight-medium;
+$fw-semi-bold: v.$typography-font-weight-semi-bold;
+$fw-bold: v.$typography-font-weight-bold;
+$fw-extra-bold: v.$typography-font-weight-extra-bold;
+$fw-black: v.$typography-font-weight-black;
+
+$font-weights: (
+  'thin': v.$typography-font-weight-thin,
+  'extra-light': v.$typography-font-weight-extra-light,
+  'light': v.$typography-font-weight-light,
+  'regular': v.$typography-font-weight-regular,
+  'medium': v.$typography-font-weight-medium,
+  'semi-bold': v.$typography-font-weight-semi-bold,
+  'bold': v.$typography-font-weight-bold,
+  'black': v.$typography-font-weight-black
+);
+// Font sizes
+// Desktop
+$fs-s: v.$semantic-size-12 * 1px;
+$fs-m: v.$semantic-size-14 * 1px;
+$fs-xl: v.$semantic-size-16  *1px;
+$fs-xxl: v.$semantic-size-18  *1px;
+// Mobile
+// Font line-heights
+$flh-s: v.$semantic-size-14 * 1px;
+$flh-m: v.$semantic-size-18  * 1px;
+$flh-xl: v.$semantic-size-20 * 1px;
+$flh-xxl: v.$semantic-size-24 * 1px;
+
+
+$font-sizes: (
+  'xxl': (
+    'size': $fs-xxl,
+    'line-height': $flh-xxl
+  ),
+  'xl': (
+    'size': $fs-xl,
+    'line-height': $flh-xl
+  ),
+  'm': (
+    'size': $fs-m,
+    'line-height': $flh-m
+  ),
+  's': (
+    'size': $fs-s,
+    'line-height': $flh-s
+  )
+);
+
+// =============================================================================
+// FONT FACE DECLARATIONS
+// =============================================================================
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Thin.woff2') format('woff2');
+  font-weight: $fw-thin;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-ExtraLight.woff2') format('woff2');
+  font-weight: $fw-extra-light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Light.woff2') format('woff2');
+  font-weight: $fw-light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: $fw-regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: $fw-medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: $fw-semi-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: $fw-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-ExtraBold.woff2') format('woff2');
+  font-weight: $fw-extra-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Black.woff2') format('woff2');
+  font-weight: $fw-black;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+$font-primary: 'Inter', sans-serif;
+

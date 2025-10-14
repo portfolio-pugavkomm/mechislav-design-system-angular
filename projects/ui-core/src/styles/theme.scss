@@ -1,8 +1,20 @@
+@use 'typography' as typ;
 @forward "paddings";
 @forward "heights";
 @forward "border-radiuis";
 @forward "colors";
+@forward "typography";
+
+@mixin body-style($weight-name, $size-name) {
+  $weight-value: map-get(typ.$font-weights, $weight-name);
+  $size-props: map-get(typ.$font-sizes, $size-name);
+  font-family: typ.$font-primary;
+  font-weight: $weight-value;
+  font-size: map-get($size-props, 'size');
+  line-height: map-get($size-props, 'line-height');
+}
 
 * {
   box-sizing: border-box;
+   font-family: typ.$font-primary;
 }

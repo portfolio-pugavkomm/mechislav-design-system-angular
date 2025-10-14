@@ -36,6 +36,34 @@
             ],
             "eslintConfig": "projects/ui-core/eslint.config.js"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/ui-core/.storybook",
+            "browserTarget": "ui-core:build",
+            "compodoc": false,
+            "port": 6006,
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui-core/src/styles"
+              ]
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/ui-core/.storybook",
+            "browserTarget": "ui-core:build",
+            "compodoc": false,
+            "outputDir": "dist/storybook/ui-core",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui-core/src/styles"
+              ]
+            }
+          }
         }
       }
     },
@@ -53,7 +81,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-
             "browser": "projects/demo-app/src/main.ts",
             "tsConfig": "projects/demo-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
