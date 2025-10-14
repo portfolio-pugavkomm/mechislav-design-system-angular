@@ -15,7 +15,7 @@ export type TagVariant = 'primary' | 'secondary' | 'info' | 'warning' | 'danger'
  *
  */
 @Component({
-  selector: 'm-tag',
+  selector: 'me-tag',
   imports: [],
   templateUrl: './m-tag.component.html',
   styleUrl: './m-tag.component.scss'
