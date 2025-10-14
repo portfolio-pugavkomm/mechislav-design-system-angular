@@ -3,5 +3,5 @@
  */
 
 
-export * from './lib/button/button';
+export * from './lib/button/m-button.component';
 export * from './lib/tag/m-tag.component';
