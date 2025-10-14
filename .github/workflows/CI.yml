@@ -1,0 +1,18 @@
+name: "CI pipline"
+
+on:
+  push:
+    branches:
+      - dev
+      - master
+      - release/**
+  pull_request:
+    branches:
+      - dev
+      - master
+
+jobs:
+  lint:
+    uses: './.github/workflows/CI_lint.yml'
+# TODO: test
+
