@@ -1,3 +1,6 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import storybook from "eslint-plugin-storybook";
+
 // @ts-check
 const eslint = require("@eslint/js");
 const tseslint = require("typescript-eslint");
@@ -18,7 +21,7 @@ module.exports = tseslint.config(
         "error",
         {
           type: "attribute",
-          prefix: "lib",
+          prefix: "m",
           style: "camelCase",
         },
       ],
@@ -26,7 +29,7 @@ module.exports = tseslint.config(
         "error",
         {
           type: "element",
-          prefix: "lib",
+          prefix: "m",
           style: "kebab-case",
         },
       ],

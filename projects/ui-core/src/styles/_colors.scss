@@ -1,0 +1,81 @@
+@use './tokens/variables' as v;
+
+$light: v.$color-neutral-white;
+$dark: v.$color-neutral-black;
+
+$bgr: $dark;
+$color-font: $light;
+
+$colors: (
+  "primary": (
+    50: v.$color-success-50,
+    200: v.$color-success-200,
+    300: v.$color-success-300,
+    400: v.$color-success-400,
+    500: v.$color-success-500,
+    600: v.$color-success-600,
+    700: v.$color-success-700,
+    800: v.$color-success-800,
+    900: v.$color-success-900,
+    1000: v.$color-success-1000,
+  ),
+  "secondary": (
+    50: v.$color-secondary-50,
+    200: v.$color-secondary-200,
+    300: v.$color-secondary-300,
+    400: v.$color-secondary-400,
+    500: v.$color-secondary-500,
+    600: v.$color-secondary-600,
+    700: v.$color-secondary-700,
+    800: v.$color-secondary-800,
+    900: v.$color-secondary-900,
+    1000: v.$color-secondary-1000,
+  ),
+  "info": (
+    50: v.$color-info-50,
+    200: v.$color-info-200,
+    300: v.$color-info-300,
+    400: v.$color-info-400,
+    500: v.$color-info-500,
+    600: v.$color-info-600,
+    700: v.$color-info-700,
+    800: v.$color-info-800,
+    900: v.$color-info-900,
+    1000: v.$color-info-1000,
+  ),
+  "warning": (
+    50: v.$color-warning-50,
+    200: v.$color-warning-200,
+    300: v.$color-warning-300,
+    400: v.$color-warning-400,
+    500: v.$color-warning-500,
+    600: v.$color-warning-600,
+    700: v.$color-warning-700,
+    800: v.$color-warning-800,
+    900: v.$color-warning-900,
+    1000: v.$color-warning-1000,
+  ),
+  "danger": (
+    50: v.$color-danger-50,
+    200: v.$color-danger-200,
+    300: v.$color-danger-300,
+    400: v.$color-danger-400,
+    500: v.$color-danger-500,
+    600: v.$color-danger-600,
+    700: v.$color-danger-700,
+    800: v.$color-danger-800,
+    900: v.$color-danger-900,
+    1000: v.$color-danger-1000,
+  ));
+
+
+$colors: map-merge($colors, ("success": map-get($colors, "primary")));
+
+@function get-color($color-name, $shade: 500) {
+  @return map-get(map-get($colors, $color-name), $shade);
+}
+
+html, body {
+  background-color: $bgr;
+  color: $color-font;
+}

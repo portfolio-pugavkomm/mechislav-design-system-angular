@@ -1,0 +1,8 @@
+<div class="buttons-container">
+  @for (size of buttonSizes; track size) {
+    <div class="button-container">
+      <p>Primary button</p>
+      <m-button variant="primary" [size]="size">Click me ({{size}})</m-button>
+    </div>
+  }
+</div>

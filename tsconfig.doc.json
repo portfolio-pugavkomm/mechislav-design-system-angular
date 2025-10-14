@@ -1,0 +1,4 @@
+{
+  "include": ["projects/ui-core/**/*.ts"],
+  "exclude": ["src/test.ts", "src/**/*.spec.ts", "projects/ui-core/src/styles/tokens/tokens.ts"]
+}

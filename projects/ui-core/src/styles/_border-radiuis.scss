@@ -1,0 +1,5 @@
+@use './tokens/variables' as v;
+
+$b-r-soft: v.$size-layout-border-radius-soft * 1px;
+$b-r-medium: v.$size-layout-border-radius-medium * 1px;
+$b-r-hard: v.$size-layout-border-radius-hard * 1px;

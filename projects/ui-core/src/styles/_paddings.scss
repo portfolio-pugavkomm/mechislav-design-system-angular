@@ -1,0 +1,7 @@
+@use './tokens/variables' as v;
+
+$p-s: v.$size-layout-padding-s * 1px;
+$p-m: v.$size-layout-padding-m * 1px;
+$p-x: v.$size-layout-padding-x * 1px;
+$p-xxl: v.$size-layout-padding-xxl * 1px;
+$p-xxxl: v.$size-layout-padding-xxxl * 1px;

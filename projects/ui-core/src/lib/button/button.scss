@@ -1,0 +1,127 @@
+@use "theme" as t;
+
+
+$btn-p-default: 0 t.$p-x 0 t.$p-x;
+$btn-height-small: t.$h-m;
+$btn-height-medium: t.$h-x;
+$btn-height-large: t.$h-xl;
+$btn-r-default: t.$b-r-soft;
+:host {
+  display: inline-flex;
+
+  &[aria-disabled='true'] {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+.btn-native {
+  all: initial;
+  box-sizing: border-box;
+  @include t.body-style('semi', 'xxl');
+  padding: $btn-p-default;
+  border-radius: $btn-r-default;
+  color: t.$color-font;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  transition: all ease-in-out 150ms;
+}
+
+
+// Sizes
+:host(.m-button--s) .btn-native {
+  min-height: $btn-height-small;
+  max-height: $btn-height-small;
+}
+
+:host(.m-button--m) .btn-native {
+  min-height: $btn-height-medium;
+  max-height: $btn-height-medium;
+}
+
+:host(.m-button--l) .btn-native {
+  min-height: $btn-height-large;
+  max-height: $btn-height-large;
+}
+
+// Variants
+:host(.m-button--primary) .btn-native {
+  background-color: t.get-color("primary", 500);
+
+  &:hover:not(:disabled, :active ) {
+    background-color: t.get-color("primary", 400);
+  }
+
+  &:disabled {
+    background-color: t.get-color("primary", 200);
+  }
+
+  &:focus {
+    border: 1px solid t.get-color("secondary", 300)
+  }
+
+  &:active:not(:disabled) {
+    background-color: t.get-color("primary", 700);
+  }
+}
+
+:host(.m-button--secondary) .btn-native {
+  border: 1px solid t.get-color("primary", 500);
+  color: t.get-color("primary", 500);
+
+  &:hover:not(:disabled, :active) {
+    background-color: t.get-color("secondary", 200);
+  }
+
+  &:disabled {
+    background-color: t.get-color("secondary", 200);
+    color: t.$light
+  }
+
+  &:focus {
+    border: 1px solid t.$light
+  }
+
+  &:active:not(:disabled) {
+    background-color: t.get-color("secondary", 200);
+    color: t.get-color("primary", 700);
+  }
+}
+
+:host(.m-button--linked) .btn-native {
+  color: t.get-color("primary", 500);
+
+  &:hover:not(:disabled, :active) {
+    color: t.get-color("primary", 400)
+  }
+
+  &:focus {
+    color: t.get-color("primary", 300);
+    border: 1px solid t.$light;
+  }
+
+  &:active:not(:disabled) {
+    color: t.get-color("primary", 700);
+  }
+}
+
+:host(.m-button--canceled) .btn-native {
+  color: t.get-color("danger", 500);
+
+  &:hover:not(:disabled, :active) {
+    color: t.get-color("danger", 400);
+  }
+
+  &:focus {
+    color: t.get-color("danger", 300);
+    border: 1px solid t.$light;
+  }
+
+  &:active:not(:disabled) {
+    color: t.get-color("danger", 700);
+  }
+}
