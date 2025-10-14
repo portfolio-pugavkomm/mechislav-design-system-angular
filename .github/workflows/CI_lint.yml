@@ -1,0 +1,22 @@
+name: "CI: Lint"
+
+on:
+  workflow_call:
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      - name: Install angular cli
+        run: npm i -g @angular/cli@20
+      - name: Run npm Install
+        run: npm ci
+      - name: Perform lint
+        run: npm run lint
