@@ -1,0 +1,20 @@
+<div class="page-container">
+  <h1>Typography page</h1>
+  <h1>Header 1</h1>
+  <h2>Header 2</h2>
+  <h3>Header 3</h3>
+  <h4>Header 4</h4>
+  <section class="section-block">
+    <h4>Logo</h4>
+    <p class="logo small">Logo small</p>
+    <p class="logo standard">Logo standard</p>
+  </section>
+  @for (size of bodySizes(); track size) {
+    @for (weight of fontWeights(); track weight) {
+      <section class="section-block">
+        <h4>{{ size }} - {{ weight }}</h4>
+        <p class="font-{{size}} font-{{weight}}">{{ typographyText() }}</p>
+      </section>
+    }
+  }
+</div>

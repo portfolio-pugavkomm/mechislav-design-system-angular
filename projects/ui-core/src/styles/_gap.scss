@@ -1,8 +1,8 @@
 @use 'tokens/variables' as v;
 
-$gap-s: v.$size-layout-gap-s * 1px;
-$gap-m: v.$size-layout-gap-m * 1px;
-$gap-x: v.$size-layout-gap-x * 1px;
-$gap-xl: v.$size-layout-gap-xl * 1px;
-$gap-xxl: v.$size-layout-gap-xxl * 1px;
-$gap-xxxl: v.$size-layout-gap-xxxl* 1px;
+$gap-s: v.$size-layout-gap-s;
+$gap-m: v.$size-layout-gap-m;
+$gap-x: v.$size-layout-gap-x;
+$gap-xl: v.$size-layout-gap-xl;
+$gap-xxl: v.$size-layout-gap-xxl;
+$gap-xxxl: v.$size-layout-gap-xxxl;

@@ -3,11 +3,13 @@
 $tag-border-radius: t.$b-r-soft;
 $tag-padding: t.$p-s t.$p-m;
 
+
 .tag-native {
   display: block;
   border-radius: $tag-border-radius;
   padding: $tag-padding;
   width: fit-content;
+  box-sizing: border-box;
 
 }
 

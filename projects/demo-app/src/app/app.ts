@@ -22,6 +22,7 @@ export class App {
   protected readonly links = signal<LinkItem[]>([
     {label: 'Buttons', url: 'buttons'},
     {label: 'Tags', url: 'tags'},
+    {label: 'Typography', url: 'typography'},
   ])
 
 }

@@ -9,4 +9,8 @@ export const routes: Routes = [
     path: 'tags',
     loadComponent: () => import('./routes/tags/tags').then(c => c.Tags),
   },
+  {
+    path: 'typography',
+    loadComponent: () => import('./routes/typography/typography').then(c => c.Typography),
+  }
 ]

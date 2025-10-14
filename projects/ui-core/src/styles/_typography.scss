@@ -21,20 +21,21 @@ $font-weights: (
   'medium': v.$typography-font-weight-medium,
   'semi-bold': v.$typography-font-weight-semi-bold,
   'bold': v.$typography-font-weight-bold,
+  'extra-bold': v.$typography-font-weight-extra-bold,
   'black': v.$typography-font-weight-black
 );
 // Font sizes
 // Desktop
-$fs-s: v.$semantic-size-12 * 1px;
-$fs-m: v.$semantic-size-14 * 1px;
-$fs-xl: v.$semantic-size-16  *1px;
-$fs-xxl: v.$semantic-size-18  *1px;
+$fs-s: v.$semantic-size-12;
+$fs-m: v.$semantic-size-14;
+$fs-xl: v.$semantic-size-16;
+$fs-xxl: v.$semantic-size-18;
 // Mobile
 // Font line-heights
-$flh-s: v.$semantic-size-14 * 1px;
-$flh-m: v.$semantic-size-18  * 1px;
-$flh-xl: v.$semantic-size-20 * 1px;
-$flh-xxl: v.$semantic-size-24 * 1px;
+$flh-s: v.$semantic-size-14;
+$flh-m: v.$semantic-size-18;
+$flh-xl: v.$semantic-size-20;
+$flh-xxl: v.$semantic-size-24;
 
 
 $font-sizes: (
@@ -131,6 +132,99 @@ $font-sizes: (
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Bakbak One';
+  src: url('/assets/fonts/BakbakOne-Regular.ttf') format('truetype');
+  font-weight: $fw-regular;
+}
 
-$font-primary: 'Inter', sans-serif;
+$font-primary: v.$typography-font-family-base, sans-serif;
+
+.header1 {
+  font-family: $font-primary;
+  font-size: v.$typography-font-size-h1;
+  line-height: v.$typography-line-height-h1;
+  font-weight: $fw-semi-bold;
+}
+
+.header2 {
+  font-family: $font-primary;
+  font-size: v.$typography-font-size-h2;
+  line-height: v.$typography-line-height-h2;
+  font-weight: $fw-semi-bold;
+}
+
+.header3 {
+  font-family: $font-primary;
+  font-size: v.$typography-font-size-h3;
+  line-height: v.$typography-line-height-h3;
+  font-weight: $fw-semi-bold;
+}
+
+.header4 {
+  font-family: $font-primary;
+  font-size: v.$typography-font-size-h4;
+  line-height: v.$typography-line-height-h4;
+  font-weight: $fw-semi-bold;
+}
+
+@mixin body-style($weight-name, $size-name) {
+  $weight-value: map-get($font-weights, $weight-name);
+  $size-props: map-get($font-sizes, $size-name);
+  font-family: $font-primary;
+  font-weight: $weight-value;
+  font-size: map-get($size-props, 'size');
+  line-height: map-get($size-props, 'line-height');
+}
+
+
+h1 {
+  @extend .header1;
+}
+
+h2 {
+  @extend .header2;
+}
+
+h3 {
+  @extend .header3;
+}
+
+h4 {
+  @extend .header4;
+}
+
+
+p {
+  @include body-style('regular', 'xxl')
+}
+
+// s, m, xl, xxl
+@each $name, $properties in $font-sizes {
+  .font-#{$name} {
+    font-size: map-get($properties, 'size');
+    line-height: map-get($properties, 'line-height');
+  }
+}
+
+// regualr, light, ...
+@each $name, $weight in $font-weights {
+  .font-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+.logo {
+  font-family: v.$typography-font-family-logo;
+  color: v.$primary-success-500
+}
+
+.logo.small {
+  font-size: v.$typography-font-size-logo-small;
+}
+
+.logo.standard {
+  font-size: v.$typography-font-size-logo-standard;
+}
+
 

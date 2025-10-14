@@ -1,7 +1,7 @@
 @use './tokens/variables' as v;
 
-$h-m: v.$size-height-m * 1px;
-$h-x: v.$size-height-x * 1px;
-$h-xl: v.$size-height-xl * 1px;
-$h-xxl: v.$size-height-xxl * 1px;
-$h-xxxl: v.$size-height-xxxl * 1px;
+$h-m: v.$size-height-m ;
+$h-x: v.$size-height-x ;
+$h-xl: v.$size-height-xl ;
+$h-xxl: v.$size-height-xxl ;
+$h-xxxl: v.$size-height-xxxl ;

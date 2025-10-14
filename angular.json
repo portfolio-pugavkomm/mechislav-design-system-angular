@@ -88,6 +88,11 @@
               {
                 "glob": "**/*",
                 "input": "projects/demo-app/public"
+              },
+              {
+                "glob": "**/*",
+                "input": "projects/ui-core/src/assets",
+                "output": "assets"
               }
             ],
             "styles": [

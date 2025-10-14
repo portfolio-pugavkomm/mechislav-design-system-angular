@@ -1,0 +1,14 @@
+@use 'theme' as t;
+
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: t.$gap-xxl;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: t.$gap-xxxl;
+  padding: 0 t.$p-xxl
+}
