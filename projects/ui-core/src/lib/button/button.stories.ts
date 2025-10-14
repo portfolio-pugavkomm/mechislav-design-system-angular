@@ -80,7 +80,7 @@ export const Canceled: Story = {
     template: _buttonTemplate,
   }),
   args: {
-    variant: 'canceled'/Users/mechislavpugavko/Develop/mechislav-design-system-angular/projects/ui-core/src/stories/button.component.ts,
+    variant: 'canceled',
     size: 'm',
     disabled: false,
   },
