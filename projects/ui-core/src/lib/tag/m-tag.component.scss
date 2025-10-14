@@ -1,0 +1,41 @@
+@use "theme" as t;
+
+$tag-border-radius: t.$b-r-soft;
+$tag-padding: t.$p-s t.$p-m;
+
+.tag-native {
+  display: block;
+  border-radius: $tag-border-radius;
+  padding: $tag-padding;
+  width: fit-content;
+
+}
+
+$variants: (
+  primary: 500,
+  secondary: 500,
+  info: 500,
+  warning: 500,
+  danger: 500,
+);
+
+@each $name, $shade in $variants {
+  :host(.m-tag--#{$name}) .tag-native {
+    color: t.get-color($name, $shade);
+    border: t.$bw-thin solid t.get-color($name, $shade);
+  }
+}
+
+$sizes: (
+  xxl,
+  xl,
+  m,
+  s
+);
+
+@each $size in $sizes {
+  :host(.m-tag--#{$size}) .tag-native {
+    @include t.body-style('regular', $size)
+  }
+}
+

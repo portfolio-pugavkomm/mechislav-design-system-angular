@@ -93,7 +93,12 @@
             "styles": [
               "projects/demo-app/src/styles.scss",
               "projects/ui-core/src/styles/theme.scss"
-            ]
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui-core/src/styles"
+              ]
+            }
           },
           "configurations": {
             "production": {

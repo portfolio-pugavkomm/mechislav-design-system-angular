@@ -4,3 +4,4 @@
 
 
 export * from './lib/button/button';
+export * from './lib/tag/m-tag.component';

@@ -1,0 +1,4 @@
+@use 'tokens/variables' as v;
+
+$bw-thin: v.$size-layout-border-width-thin * 1px;
+$bw-light: v.$size-layout-border-width-light * 1px;
