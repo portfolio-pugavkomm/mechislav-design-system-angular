@@ -75,6 +75,26 @@ $colors: map-merge($colors, ("success": map-get($colors, "primary")));
   @return map-get(map-get($colors, $color-name), $shade);
 }
 
+.text.primary {
+  color: get-color("primary", 500);
+}
+
+.text.info {
+  color: get-color("info", 500);
+}
+
+.text.secondary {
+  color: get-color("secondary", 500);
+}
+.text.warning {
+  color: get-color("warning", 500);
+}
+
+.text.danger {
+  color: get-color("danger", 500);
+}
+
+
 html, body {
   background-color: $bgr;
   color: $color-font;

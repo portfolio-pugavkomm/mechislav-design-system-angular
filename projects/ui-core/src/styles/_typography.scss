@@ -168,6 +168,11 @@ $font-primary: v.$typography-font-family-base, sans-serif;
   font-weight: $fw-semi-bold;
 }
 
+.header1, .header2, .header3, .header4 {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin body-style($weight-name, $size-name) {
   $weight-value: map-get($font-weights, $weight-name);
   $size-props: map-get($font-sizes, $size-name);
@@ -196,7 +201,9 @@ h4 {
 
 
 p {
-  @include body-style('regular', 'xxl')
+  @include body-style('regular', 'xxl');
+  margin: 0;
+  padding: 0;
 }
 
 // s, m, xl, xxl
@@ -204,6 +211,8 @@ p {
   .font-#{$name} {
     font-size: map-get($properties, 'size');
     line-height: map-get($properties, 'line-height');
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -216,7 +225,9 @@ p {
 
 .logo {
   font-family: v.$typography-font-family-logo;
-  color: v.$primary-success-500
+  color: v.$primary-success-500;
+  margin: 0;
+  padding: 0;
 }
 
 .logo.small {

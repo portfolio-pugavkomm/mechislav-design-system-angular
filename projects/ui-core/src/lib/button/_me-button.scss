@@ -8,6 +8,10 @@ $btn-height-large: t.$h-xl;
 $btn-r-default: t.$b-r-soft;
 .me-button {
   all: initial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   box-sizing: border-box;
   border-collapse: collapse;
@@ -18,9 +22,11 @@ $btn-r-default: t.$b-r-soft;
   color: t.$color-font;
   cursor: pointer;
   border: t.$bw-thin solid transparent;
+
   &:disabled {
     cursor: not-allowed;
   }
+
   transition: all ease-in-out 150ms;
 }
 
