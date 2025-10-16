@@ -12,6 +12,7 @@ export type ButtonSize = 's' | 'm' | 'l'; // small, medium (default), large
 
 @Directive({
   selector: 'button[meButton], a[meButton]',
+  standalone: true,
   host: {
     'class': 'me-button',
     '[class.me-button--primary]': 'variant() === "primary"',
@@ -27,6 +28,8 @@ export type ButtonSize = 's' | 'm' | 'l'; // small, medium (default), large
   }
 })
 export class MeButtonDirective {
+
+
   /**
    * Disable button
    */
@@ -43,6 +46,7 @@ export class MeButtonDirective {
   size = input<ButtonSize>('m');
 
   protected readonly isButton = signal<boolean | undefined>(undefined);
+
 
   constructor() {
     const elem = inject(ElementRef).nativeElement as HTMLElement;

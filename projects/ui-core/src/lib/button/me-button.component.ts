@@ -3,6 +3,7 @@ import {MeButtonDirective} from './me-button.directive';
 
 @Component({
   selector: 'me-button',
+  standalone: true,
   imports: [],
  hostDirectives: [
     {
