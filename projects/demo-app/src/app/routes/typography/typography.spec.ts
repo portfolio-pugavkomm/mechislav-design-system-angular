@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Typography } from './typography';
+import {provideZonelessChangeDetection} from '@angular/core';
 
 describe('Typography', () => {
   let component: Typography;
@@ -8,7 +9,8 @@ describe('Typography', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Typography]
+      imports: [Typography],
+      providers: [provideZonelessChangeDetection()]
     })
     .compileComponents();
 
