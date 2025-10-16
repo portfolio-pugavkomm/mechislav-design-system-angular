@@ -1,6 +1,6 @@
 import {Component, signal} from '@angular/core';
 import {RouterModule, RouterOutlet} from '@angular/router';
-import {MButton} from 'ui-core';
+import {MEButton} from 'ui-core';
 
 interface LinkItem {
   label: string;
@@ -11,7 +11,7 @@ interface LinkItem {
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    MButton,
+    MEButton,
     RouterModule,
   ],
   templateUrl: './app.html',

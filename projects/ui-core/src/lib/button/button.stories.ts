@@ -1,11 +1,11 @@
 import type {Meta, StoryObj} from '@storybook/angular';
-import {MButton} from './m-button.component';
+import {MEButton} from './me-button.component';
 
 const _buttonTemplate = `<m-button [size]=size [variant]="variant" [disabled]="disabled">{{label ?? 'Click me'}}</m-button>`;
 
-const meta: Meta<MButton> = {
+const meta: Meta<MEButton> = {
   title: 'UI KIT/Atoms/Button',
-  component: MButton,
+  component: MEButton,
   tags: ['autodocs'],
 
   argTypes: {
@@ -34,7 +34,7 @@ const meta: Meta<MButton> = {
 }
 
 export default meta;
-type Story = StoryObj<MButton>;
+type Story = StoryObj<MEButton>;
 
 
 export const Playground: Story = {

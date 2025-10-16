@@ -10,6 +10,8 @@
       "prefix": "m",
       "architect": {
         "build": {
+          "options": {
+          },
           "builder": "@angular/build:ng-packagr",
           "configurations": {
             "production": {
@@ -97,7 +99,7 @@
             ],
             "styles": [
               "projects/demo-app/src/styles.scss",
-              "projects/ui-core/src/styles/theme.scss"
+              "projects/ui-core/src/styles/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

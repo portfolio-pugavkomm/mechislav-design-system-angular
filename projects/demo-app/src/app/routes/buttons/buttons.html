@@ -2,8 +2,11 @@
   @for (size of buttonSizes; track size) {
     @for (variant of buttonVariants(); track variant) {
       <div class="button-container">
-        <me-button [variant]="variant" [size]="size">Click me ({{ size }}, {{ variant }})</me-button>
+        <button meButton [variant]="variant" [size]="size">Click me ({{ size }}, {{ variant }})</button>
       </div>
     }
   }
+
+  <button meButton variant="canceled" [disabled]="true">sadasd</button>
+
 </div>

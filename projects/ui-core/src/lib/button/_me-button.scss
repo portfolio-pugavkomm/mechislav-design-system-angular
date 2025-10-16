@@ -6,18 +6,11 @@ $btn-height-small: t.$h-m;
 $btn-height-medium: t.$h-x;
 $btn-height-large: t.$h-xl;
 $btn-r-default: t.$b-r-soft;
-:host {
-  display: inline-flex;
-
-  &[aria-disabled='true'] {
-    pointer-events: none;
-    cursor: not-allowed;
-  }
-}
-
-.btn-native {
+.me-button {
   all: initial;
+  text-align: center;
   box-sizing: border-box;
+  text-wrap: nowrap;
   @include t.body-style('semi', 'xxl');
   padding: $btn-p-default;
   border-radius: $btn-r-default;
@@ -27,29 +20,28 @@ $btn-r-default: t.$b-r-soft;
   &:disabled {
     cursor: not-allowed;
   }
-
   transition: all ease-in-out 150ms;
 }
 
 
 // Sizes
-:host(.m-button--s) .btn-native {
+.me-button--s {
   min-height: $btn-height-small;
   max-height: $btn-height-small;
 }
 
-:host(.m-button--m) .btn-native {
+.me-button--m {
   min-height: $btn-height-medium;
   max-height: $btn-height-medium;
 }
 
-:host(.m-button--l) .btn-native {
+.me-button--l {
   min-height: $btn-height-large;
   max-height: $btn-height-large;
 }
 
 // Variants
-:host(.m-button--primary) .btn-native {
+.me-button--primary {
   background-color: t.get-color("primary", 500);
 
   &:hover:not(:disabled, :active ) {
@@ -69,7 +61,7 @@ $btn-r-default: t.$b-r-soft;
   }
 }
 
-:host(.m-button--secondary) .btn-native {
+.me-button--secondary {
   border: 1px solid t.get-color("primary", 500);
   color: t.get-color("primary", 500);
 
@@ -92,7 +84,7 @@ $btn-r-default: t.$b-r-soft;
   }
 }
 
-:host(.m-button--linked) .btn-native {
+.me-button--linked {
   color: t.get-color("primary", 500);
 
   &:hover:not(:disabled, :active) {
@@ -109,7 +101,7 @@ $btn-r-default: t.$b-r-soft;
   }
 }
 
-:host(.m-button--canceled) .btn-native {
+.me-button--canceled {
   color: t.get-color("danger", 500);
 
   &:hover:not(:disabled, :active) {
