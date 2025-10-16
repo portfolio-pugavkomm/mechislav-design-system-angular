@@ -26,7 +26,16 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/ui-core/tsconfig.spec.json"
+            "karmaConfig": "karma.conf.js",
+            "preserveSymlinks": true,
+            "tsConfig": "projects/ui-core/tsconfig.spec.json",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui-core/src/styles"
+              ]
+            },
+            "styles": [
+            ]
           }
         },
         "lint": {
@@ -37,34 +46,6 @@
               "projects/ui-core/**/*.html"
             ],
             "eslintConfig": "projects/ui-core/eslint.config.js"
-          }
-        },
-        "storybook": {
-          "builder": "@storybook/angular:start-storybook",
-          "options": {
-            "configDir": "projects/ui-core/.storybook",
-            "browserTarget": "ui-core:build",
-            "compodoc": false,
-            "port": 6006,
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "projects/ui-core/src/styles"
-              ]
-            }
-          }
-        },
-        "build-storybook": {
-          "builder": "@storybook/angular:build-storybook",
-          "options": {
-            "configDir": "projects/ui-core/.storybook",
-            "browserTarget": "ui-core:build",
-            "compodoc": false,
-            "outputDir": "dist/storybook/ui-core",
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "projects/ui-core/src/styles"
-              ]
-            }
           }
         }
       }
@@ -149,16 +130,28 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+             "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui-core/src/styles"
+              ]
+            },
+            "karmaConfig": "karma.conf.js",
             "tsConfig": "projects/demo-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "projects/demo-app/public"
+              },
+              {
+                "glob": "**/*",
+                "input": "projects/ui-core/src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
-              "projects/demo-app/src/styles.scss"
+              "projects/demo-app/src/styles.scss",
+              "project/ui-core/src/styles/styles.scss"
             ]
           }
         },
