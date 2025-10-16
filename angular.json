@@ -26,6 +26,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+            "karmaConfig": "karma.conf.js",
             "preserveSymlinks": true,
             "tsConfig": "projects/ui-core/tsconfig.spec.json",
             "stylePreprocessorOptions": {
@@ -129,6 +130,12 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+             "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui-core/src/styles"
+              ]
+            },
+            "karmaConfig": "karma.conf.js",
             "tsConfig": "projects/demo-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [

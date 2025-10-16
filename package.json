@@ -10,6 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint",
     "test": "ng test",
+    "test:detach": "ng test  --watch=false",
     "build:tokens": "npx style-dictionary build -c style-dictionary.config.js",
     "prepare": "husky",
     "compodoc:build": "compodoc -p tsconfig.doc.json",
