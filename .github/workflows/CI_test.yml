@@ -1,0 +1,26 @@
+name: Test angular
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: ['ui-core', 'demo-app']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Test for ${{ matrix.project }}
+        run: npx ng test --browsers=ChromeHeadless --progress=false --watch=false --code-coverage --source-map=false ${{ matrix.project }}

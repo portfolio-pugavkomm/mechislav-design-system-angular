@@ -14,5 +14,6 @@ on:
 jobs:
   lint:
     uses: './.github/workflows/CI_lint.yml'
-# TODO: test
+  test:
+    uses: './.github/workflows/CI_test.yml'
 

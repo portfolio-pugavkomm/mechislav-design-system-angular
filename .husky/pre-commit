@@ -1,3 +1,5 @@
 npm run lint
 echo "Run ui-core tests"
 npm run test:detach -- ui-core
+echo "Run demo-app tests"
+npm run test:detach -- demo-app

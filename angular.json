@@ -150,8 +150,7 @@
               }
             ],
             "styles": [
-              "projects/demo-app/src/styles.scss",
-              "project/ui-core/src/styles/styles.scss"
+              "projects/demo-app/src/styles.scss"
             ]
           }
         },
