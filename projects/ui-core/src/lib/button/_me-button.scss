@@ -10,13 +10,14 @@ $btn-r-default: t.$b-r-soft;
   all: initial;
   text-align: center;
   box-sizing: border-box;
+  border-collapse: collapse;
   text-wrap: nowrap;
   @include t.body-style('semi', 'xxl');
   padding: $btn-p-default;
   border-radius: $btn-r-default;
   color: t.$color-font;
   cursor: pointer;
-
+  border: t.$bw-thin solid transparent;
   &:disabled {
     cursor: not-allowed;
   }
@@ -52,11 +53,11 @@ $btn-r-default: t.$b-r-soft;
     background-color: t.get-color("primary", 200);
   }
 
-  &:focus {
-    border: 1px solid t.get-color("secondary", 300)
+  &:focus:not(:active, :hover) {
+    border: t.$bw-thin solid t.get-color("secondary", 300);
   }
 
-  &:active:not(:disabled) {
+  &:active:not(:disabled, :hover) {
     background-color: t.get-color("primary", 700);
   }
 }
@@ -74,7 +75,7 @@ $btn-r-default: t.$b-r-soft;
     color: t.$light
   }
 
-  &:focus {
+  &:focus:not(:active) {
     border: 1px solid t.$light
   }
 
