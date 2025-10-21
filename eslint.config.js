@@ -40,5 +40,4 @@ module.exports = tseslint.config(
     ],
     rules: {},
   },
-  // You can include your storybook configuration here as well
 );
