@@ -1,0 +1,19 @@
+
+<form [formGroup]="formGroup">
+  <h4>Login form</h4>
+  <div class="inputs-container">
+    <me-field>
+      <me-label>Username</me-label>
+      <input meInput type="text" placeholder="Username" required formControlName="username"/>
+    </me-field>
+
+    <me-field>
+      <me-label>Password</me-label>
+      <me-help>Please, use strong password</me-help>
+      <input meInput type="password" placeholder="Password" required formControlName="password"/>
+    </me-field>
+  </div>
+  <button type="submit" [disabled]="formGroup.invalid" meButton variant="primary">Login</button>
+</form>
+<button meButton variant="secondary">Register</button>
+

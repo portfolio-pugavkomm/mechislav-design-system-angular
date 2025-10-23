@@ -1,0 +1,22 @@
+@use 'theme' as t;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: t.$gap-xxxl;
+  width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  gap: t.$gap-x;
+  flex-direction: column;
+}
+
+form .inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: t.$gap-m;
+}
+

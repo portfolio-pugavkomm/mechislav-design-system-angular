@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ui-core",
       "sourceRoot": "projects/ui-core/src",
-      "prefix": "m",
+      "prefix": "me",
       "architect": {
         "build": {
           "options": {

@@ -1,0 +1,16 @@
+<ng-template #inputTemplate>
+  <ng-content select="[meInput]"></ng-content>
+</ng-template>
+
+<ng-content select="me-label"></ng-content>
+@if (isInputRequired()) {
+
+  <div class="required-wrapper">
+    <ng-container *ngTemplateOutlet="inputTemplate"></ng-container>
+  </div>
+
+} @else {
+  <ng-container *ngTemplateOutlet="inputTemplate"></ng-container>
+}
+
+<ng-content select="me-help"></ng-content>

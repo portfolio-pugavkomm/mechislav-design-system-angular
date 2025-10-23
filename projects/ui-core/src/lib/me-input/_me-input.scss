@@ -1,0 +1,36 @@
+@use 'theme' as t;
+@use 'typography' as typ;
+
+.me-input {
+  all: initial;
+  flex: 1;
+  box-sizing: border-box;
+  max-height: t.$h-xl;
+  min-height: t.$h-xl;
+  background-color: t.$input-bgr;
+  border-radius: t.$b-r-soft;
+  color: t.get-color("secondary", 200);
+  @include typ.body-style("regular", "xxl");
+  padding: 0 t.$p-x;
+  cursor: text;
+  border: t.$bw-thin solid transparent;
+  transition: all 150ms ease-in-out;
+
+  &:hover:not(:disabled) {
+    background-color: t.get-color("secondary", 700);
+  }
+
+  &:focus:not(:hover) {
+    border: t.$bw-thin solid t.get-color("primary", 500);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: t.get-color("secondary", 900);
+    color: t.get-color("secondary", 600);
+  }
+}
+
+.me-input.ng-dirty.ng-invalid {
+  border-color: t.get-color("danger", 500);
+}

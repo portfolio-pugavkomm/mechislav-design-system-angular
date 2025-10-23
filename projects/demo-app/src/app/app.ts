@@ -23,6 +23,7 @@ export class App {
     {label: 'Buttons', url: 'buttons'},
     {label: 'Tags', url: 'tags'},
     {label: 'Typography', url: 'typography'},
+    {label: 'Inputs', url: 'inputs'},
   ])
 
 }

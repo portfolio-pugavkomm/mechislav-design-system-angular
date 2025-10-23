@@ -1,0 +1,30 @@
+<h2>Inputs example</h2>
+<div class="inputs-container">
+  <me-field>
+    <me-label>Default field</me-label>
+    <me-help>Just example of field</me-help>
+    <input meInput value="Some value"/>
+  </me-field>
+
+  <me-field>
+    <me-label>Input with placeholder text</me-label>
+    <input meInput placeholder="type here..."/>
+  </me-field>
+
+  <me-field>
+    <input meInput required placeholder="Type here... (required)"/>
+  </me-field>
+
+  <me-field>
+    <input meInput type="password" value="vasdasd" required/>
+  </me-field>
+
+  <me-field>
+    <input meInput type="email" value="test@gmail.com" required [disabled]="false"/>
+  </me-field>
+
+  <me-field>
+    <input meInput value="Disabled" disabled/>
+  </me-field>
+</div>
+<app-login-form/>
