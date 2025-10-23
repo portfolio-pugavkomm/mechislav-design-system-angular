@@ -1,6 +1,6 @@
 {
   "name": "mechislav-design-system-angular",
-  "version": "0.0.0",
+  "version": "0.0.1-rc.0",
   "scripts": {
     "compodoc": "npx compodoc -p tsconfig.doc.json",
     "storybook": "ng run ui-core:storybook",
