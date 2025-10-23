@@ -1,12 +1,17 @@
 {
   "name": "@portfolio-pugavkomm/ui-core",
-  "version": "0.0.1-rc.2",
+  "version": "0.0.1-rc.3",
   "peerDependencies": {
     "@angular/common": "^20.3.0",
     "@angular/core": "^20.3.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "exports": {
+   "./src/styles/styles.scss": {
+    "sass": "./src/styles/styles.scss"
+  }
   },
   "sideEffects": false
 }
