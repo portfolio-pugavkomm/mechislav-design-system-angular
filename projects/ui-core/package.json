@@ -1,6 +1,6 @@
 {
-  "name": "ui-core",
-  "version": "0.0.1",
+  "name": "@portfolio-pugavkomm/ui-core",
+  "version": "0.0.1-rc.2",
   "peerDependencies": {
     "@angular/common": "^20.3.0",
     "@angular/core": "^20.3.0"
