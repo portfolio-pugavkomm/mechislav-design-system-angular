@@ -140,6 +140,34 @@ $font-sizes: (
 
 $font-primary: v.$typography-font-family-base, sans-serif;
 
+.display-base {
+  font-family: $font-primary;
+  font-weight: v.$typography-font-weight-regular;
+}
+
+.display1 {
+  font-size: v.$typography-font-size-display-1;
+  line-height: v.$typography-line-height-display-1;
+}
+
+
+.display2 {
+  font-size: v.$typography-font-size-display-2;
+  line-height: v.$typography-line-height-display-2;
+}
+
+@media (min-width: 600px) {
+  .display1 {
+    font-size: v.$typography-font-size-mobile-display-1;
+    line-height: v.$typography-line-height-mobile-display-1;
+  }
+
+  .display2 {
+    font-size: v.$typography-font-size-mobile-display-2;
+    line-height: v.$typography-line-height-mobile-display-2;
+  }
+}
+
 .header1 {
   font-family: $font-primary;
   font-size: v.$typography-font-size-h1;
