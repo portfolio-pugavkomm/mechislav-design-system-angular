@@ -112,39 +112,17 @@ export const NeutralWhite = "#ffffff";
 export const InputLabel = "#cccccc";
 export const InputHelp = "#cccccc";
 export const InputBgr = "#353535";
-export const InputSubtext = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Light",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const InputXl = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
 export const TypographyFontFamilyBase = "Inter";
 export const TypographyFontFamilyLogo = "Bakbak One";
-export const TypographyFontWeightThin = "100px";
-export const TypographyFontWeightExtraLight = "200px";
-export const TypographyFontWeightLight = "300px";
-export const TypographyFontWeightRegular = "400px";
-export const TypographyFontWeightMedium = "500px";
-export const TypographyFontWeightSemiBold = "600px";
-export const TypographyFontWeightBold = "700px";
-export const TypographyFontWeightExtraBold = "800px";
-export const TypographyFontWeightBlack = "900px";
+export const TypographyFontWeightThin = "100rem";
+export const TypographyFontWeightExtraLight = "200rem";
+export const TypographyFontWeightLight = "300rem";
+export const TypographyFontWeightRegular = "400rem";
+export const TypographyFontWeightMedium = "500rem";
+export const TypographyFontWeightSemiBold = "600rem";
+export const TypographyFontWeightBold = "700rem";
+export const TypographyFontWeightExtraBold = "800rem";
+export const TypographyFontWeightBlack = "900rem";
 export const TypographyFontSizeP1 = "18px";
 export const TypographyFontSizeH1 = "96px";
 export const TypographyFontSizeH2 = "72px";
@@ -156,11 +134,9 @@ export const TypographyFontSizeP4 = "12px";
 export const TypographyFontSizeDisplay1 = "128px";
 export const TypographyFontSizeLogoStandard = "32px";
 export const TypographyFontSizeLogoSmall = "24px";
-export const TypographyFontSizeLogoStandard2 = "32px";
 export const TypographyFontSizeDisplay2 = "96px";
 export const TypographyFontSizeMobileDisplay1 = "72px";
 export const TypographyFontSizeMobileDisplay2 = "56px";
-export const TypographyFontSizeLogoSmall2 = "24px";
 export const TypographyLineHeightP1 = "24px";
 export const TypographyLineHeightH1 = "104px";
 export const TypographyLineHeightH2 = "80px";
@@ -194,16 +170,16 @@ export const SizeLayoutGapS = "4px";
 export const SizeLayoutGapM = "8px";
 export const SizeLayoutGapX = "16px";
 export const SizeLayoutGapXl = "24px";
-export const SizeLayoutGapXxl = "32px";
-export const SizeLayoutGapXxxl = "40px";
-export const SizeLayoutGapXxxxl = "64px";
+export const SizeLayoutGap2xl = "32px";
+export const SizeLayoutGap3xl = "40px";
+export const SizeLayoutGap4xl = "64px";
 export const SizeLayoutPaddingZero = "0px";
 export const SizeLayoutPaddingS = "4px";
 export const SizeLayoutPaddingM = "8px";
 export const SizeLayoutPaddingX = "16px";
 export const SizeLayoutPaddingXl = "24px";
-export const SizeLayoutPaddingXxl = "32px";
-export const SizeLayoutPaddingXxxl = "40px";
+export const SizeLayoutPadding2xl = "32px";
+export const SizeLayoutPadding3xl = "40px";
 export const SizeLayoutPaddingTopMainContainerDesktop = "96px";
 export const SizeLayoutBorderWidthThin = "1px";
 export const SizeLayoutBorderWidthLight = "2px";
@@ -212,8 +188,8 @@ export const SizeHeightS = "16px";
 export const SizeHeightM = "32px";
 export const SizeHeightX = "48px";
 export const SizeHeightXl = "56px";
-export const SizeHeightXxl = "64px";
-export const SizeHeightXxxl = "72px";
+export const SizeHeight2xl = "64px";
+export const SizeHeight3xl = "72px";
 export const SizeHeightNavDesktop = "88px";
 export const SizeHeightNavMobile = "56px";
 export const SemanticSize0 = "0px";
@@ -238,17 +214,19 @@ export const SemanticSize96 = "96px";
 export const SemanticSize104 = "104px";
 export const SemanticSize120 = "120px";
 export const SemanticSize128 = "128px";
-export const SemanticWeight100 = "100px";
-export const SemanticWeight200 = "200px";
-export const SemanticWeight300 = "300px";
-export const SemanticWeight400 = "400px";
-export const SemanticWeight500 = "500px";
-export const SemanticWeight600 = "600px";
-export const SemanticWeight700 = "700px";
-export const SemanticWeight800 = "800px";
-export const SemanticWeight900 = "900px";
-export const SemanticWeight1000 = "1000px";
-export const ParagraphSpacing0 = 0;
+export const SemanticWeight100 = "100rem";
+export const SemanticWeight200 = "200rem";
+export const SemanticWeight300 = "300rem";
+export const SemanticWeight400 = "400rem";
+export const SemanticWeight500 = "500rem";
+export const SemanticWeight600 = "600rem";
+export const SemanticWeight700 = "700rem";
+export const SemanticWeight800 = "800rem";
+export const SemanticWeight900 = "900rem";
+export const SemanticWeight1000 = "1000rem";
+export const LogoStandard = "32px";
+export const LogoSmall = "24px";
+export const ParagraphSpacing0 = "0px";
 export const ParagraphSpacing1 = "0px";
 export const ParagraphSpacing2 = "0px";
 export const ParagraphSpacing3 = "0px";
@@ -297,573 +275,3 @@ export const ParagraphSpacing45 = "0px";
 export const ParagraphSpacing46 = "0px";
 export const ParagraphSpacing47 = "0px";
 export const ParagraphIndent0 = "0px";
-export const NavGrad = "linear-gradient(90deg, #278a4733 5.77%, #5959591a 50%)";
-export const LineHeights0 = 104;
-export const LineHeights1 = 80;
-export const LineHeights2 = 56;
-export const LineHeights3 = 48;
-export const LineHeights4 = 24;
-export const LineHeights5 = 20;
-export const LineHeights6 = 18;
-export const LineHeights7 = 14;
-export const LineHeights8 = 24;
-export const LineHeights9 = 20;
-export const LineHeights10 = 18;
-export const LineHeights11 = 14;
-export const LineHeights12 = 24;
-export const LineHeights13 = 20;
-export const LineHeights14 = 18;
-export const LineHeights15 = 14;
-export const LineHeights16 = 24;
-export const LineHeights17 = 20;
-export const LineHeights18 = 18;
-export const LineHeights19 = 14;
-export const LineHeights20 = 24;
-export const LineHeights21 = 20;
-export const LineHeights22 = 18;
-export const LineHeights23 = 14;
-export const LineHeights24 = 24;
-export const LineHeights25 = 20;
-export const LineHeights26 = 18;
-export const LineHeights27 = 14;
-export const LineHeights28 = 24;
-export const LineHeights29 = 20;
-export const LineHeights30 = 18;
-export const LineHeights31 = 14;
-export const LineHeights32 = 24;
-export const LineHeights33 = 20;
-export const LineHeights34 = 18;
-export const LineHeights35 = 14;
-export const LineHeights36 = 24;
-export const LineHeights37 = 20;
-export const LineHeights38 = 18;
-export const LineHeights39 = 14;
-export const LineHeights40 = 32;
-export const LineHeights41 = 24;
-export const LineHeights42 = 14;
-export const LineHeights43 = 24;
-export const LineHeights44 = 128;
-export const LineHeights45 = 96;
-export const LineHeights46 = 88;
-export const LineHeights47 = 64;
-export const FontSize0 = 12;
-export const FontSize1 = 14;
-export const FontSize2 = 16;
-export const FontSize3 = 18;
-export const FontSize4 = 24;
-export const FontSize5 = 32;
-export const FontSize6 = 48;
-export const FontSize7 = 56;
-export const FontSize8 = 72;
-export const FontSize9 = 96;
-export const FontSize10 = 128;
-export const LetterSpacing0 = "0%";
-export const Header1 = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 104,
-  fontSize: 96,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const Header2 = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 80,
-  fontSize: 72,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const Header3 = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 56,
-  fontSize: 48,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const Header4 = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 48,
-  fontSize: 24,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyThinXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Thin",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyThinXl = {
-  fontFamily: "Inter",
-  fontWeight: "Thin",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyThinM = {
-  fontFamily: "Inter",
-  fontWeight: "Thin",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyThinS = {
-  fontFamily: "Inter",
-  fontWeight: "Thin",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraLightXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Light",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraLightXl = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Light",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraLightM = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Light",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraLightS = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Light",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyLightXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Light",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyLightXl = {
-  fontFamily: "Inter",
-  fontWeight: "Light",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyLightM = {
-  fontFamily: "Inter",
-  fontWeight: "Light",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyLightS = {
-  fontFamily: "Inter",
-  fontWeight: "Light",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyRegularXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyRegularXl = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyRegularM = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyRegularS = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyMediumXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Medium",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyMediumXl = {
-  fontFamily: "Inter",
-  fontWeight: "Medium",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyMediumM = {
-  fontFamily: "Inter",
-  fontWeight: "Medium",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyMediumS = {
-  fontFamily: "Inter",
-  fontWeight: "Medium",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodySemiXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodySemiXl = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodySemiM = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodySemiS = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBoldXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Bold",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBoldXl = {
-  fontFamily: "Inter",
-  fontWeight: "Bold",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBoldM = {
-  fontFamily: "Inter",
-  fontWeight: "Bold",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBoldS = {
-  fontFamily: "Inter",
-  fontWeight: "Bold",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraBoldXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Bold",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraBoldXl = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Bold",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraBoldM = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Bold",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyExtraBoldS = {
-  fontFamily: "Inter",
-  fontWeight: "Extra Bold",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBlackXxl = {
-  fontFamily: "Inter",
-  fontWeight: "Black",
-  lineHeight: 24,
-  fontSize: 18,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBlackXl = {
-  fontFamily: "Inter",
-  fontWeight: "Black",
-  lineHeight: 20,
-  fontSize: 16,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBlackM = {
-  fontFamily: "Inter",
-  fontWeight: "Black",
-  lineHeight: 18,
-  fontSize: 14,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const BodyBlackS = {
-  fontFamily: "Inter",
-  fontWeight: "Black",
-  lineHeight: 14,
-  fontSize: 12,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const LogoStandard = {
-  fontFamily: "Bakbak One",
-  fontWeight: "Regular",
-  lineHeight: 32,
-  fontSize: 32,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "uppercase",
-  textDecoration: "none",
-};
-export const LogoSmall = {
-  fontFamily: "Bakbak One",
-  fontWeight: "Regular",
-  lineHeight: 24,
-  fontSize: 24,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "uppercase",
-  textDecoration: "none",
-};
-export const LandingDisplay1 = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 128,
-  fontSize: 128,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const LandingDisplay2 = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 96,
-  fontSize: 96,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const MobileDisplay1 = {
-  fontFamily: "Inter",
-  fontWeight: "Semi Bold",
-  lineHeight: 88,
-  fontSize: 72,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const MobileDisplay2 = {
-  fontFamily: "Inter",
-  fontWeight: "Regular",
-  lineHeight: 64,
-  fontSize: 56,
-  letterSpacing: "0%",
-  paragraphSpacing: 0,
-  paragraphIndent: "0px",
-  textCase: "none",
-  textDecoration: "none",
-};
-export const TextCaseNone = "none";
-export const TextCaseUppercase = "uppercase";
-export const TextDecorationNone = "none";

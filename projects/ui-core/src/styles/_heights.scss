@@ -1,7 +1,11 @@
 @use './tokens/variables' as v;
 
-$h-m: v.$size-height-m ;
-$h-x: v.$size-height-x ;
-$h-xl: v.$size-height-xl ;
-$h-xxl: v.$size-height-xxl ;
-$h-xxxl: v.$size-height-xxxl ;
+$h-m: v.$size-height-m;
+$h-x: v.$size-height-x;
+$h-xl: v.$size-height-xl;
+$h-2xl: v.$size-height-2xl;
+$h-3xl: v.$size-height-3xl;
+
+// Navbar
+$h-nav-desktop: v.$size-height-nav-desktop;
+$h-nav-mobile: v.$size-height-nav-mobile;

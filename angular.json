@@ -72,19 +72,19 @@
                 "glob": "**/*",
                 "input": "projects/demo-app/public"
               },
-              {
+                {
                 "glob": "**/*",
-                "input": "projects/ui-core/src/assets",
+                "input": "dist/ui-core/src/assets",
                 "output": "assets"
               }
             ],
             "styles": [
               "projects/demo-app/src/styles.scss",
-              "projects/ui-core/src/styles/styles.scss"
+              "dist/ui-core/src/styles/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "projects/ui-core/src/styles"
+                "dist/ui-core/src/styles"
               ]
             }
           },

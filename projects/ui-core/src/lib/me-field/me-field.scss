@@ -1,5 +1,5 @@
-@use '../tokens/variables' as v;
-@use '../theme' as t;
+@use '../../styles/tokens/variables' as v;
+@use '../../styles/theme' as t;
 
 :host {
   display: flex;

@@ -18,7 +18,7 @@ import {MeHelp} from '../me-help';
     NgTemplateOutlet
   ],
   templateUrl: './me-field.html',
-  styleUrl: '../../styles/global/me-field.scss'
+  styleUrl: './me-field.scss'
 })
 export class MeField {
 
