@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
-import {MeButtonDirective, MeField, MeHelp, MeInputDirective, MeLabel} from 'ui-core';
+import {MeField, MeHelp, MeInput, MeLabel} from 'ui-core';
 import {LoginForm} from './components/login-form/login-form';
 
 @Component({
   selector: 'app-inputs',
-  imports: [MeInputDirective, MeField, MeButtonDirective, MeLabel, MeHelp, LoginForm],
+  imports: [MeField, MeLabel, MeHelp, LoginForm, MeInput],
 
   templateUrl: './inputs.html',
   styleUrl: './inputs.scss'

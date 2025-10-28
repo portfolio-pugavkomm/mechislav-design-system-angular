@@ -27,7 +27,7 @@ export type ButtonSize = 's' | 'm' | 'l'; // small, medium (default), large
     '(click)': 'handleClick($event)'
   }
 })
-export class MeButtonDirective {
+export class MeButton {
 
 
   /**

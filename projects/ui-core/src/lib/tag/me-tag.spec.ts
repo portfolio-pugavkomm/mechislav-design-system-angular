@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MTag } from './m-tag.component';
+import { MeTag } from './me-tag';
 import {provideZonelessChangeDetection} from '@angular/core';
 
 describe('Tag', () => {
-  let component: MTag;
-  let fixture: ComponentFixture<MTag>;
+  let component: MeTag;
+  let fixture: ComponentFixture<MeTag>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MTag],
+      imports: [MeTag],
       providers: [provideZonelessChangeDetection()]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MTag);
+    fixture = TestBed.createComponent(MeTag);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

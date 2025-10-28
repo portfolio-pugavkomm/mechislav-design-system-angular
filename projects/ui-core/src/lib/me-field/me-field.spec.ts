@@ -3,14 +3,14 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {MeField} from './me-field';
 import {ChangeDetectionStrategy, Component, provideZonelessChangeDetection, signal} from '@angular/core';
 import {By} from '@angular/platform-browser';
-import {MeInputDirective} from '../me-input';
+import {MeInput} from '../me-input';
 import {MeLabel} from '../me-label';
 import {MeHelp} from '../me-help';
 
 
 @Component({
   standalone: true,
-  imports: [MeField, MeInputDirective, MeLabel, MeHelp],
+  imports: [MeField, MeInput, MeLabel, MeHelp],
   template: `
     <me-field>
       @if (showLabel()) {

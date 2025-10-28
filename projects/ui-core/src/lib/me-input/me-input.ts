@@ -12,7 +12,7 @@ import {booleanAttribute, computed, Directive, ElementRef, inject, input, signal
     '[attr.disabled]': 'disabled() ? true : null',
   }
 })
-export class MeInputDirective {
+export class MeInput {
   readonly elementRef: ElementRef<HTMLInputElement> = inject(ElementRef);
 
   /**

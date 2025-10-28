@@ -1,1 +1,1 @@
-export * from './me-input.directive';
+export * from './me-input';

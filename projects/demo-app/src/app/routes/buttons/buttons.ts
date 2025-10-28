@@ -1,10 +1,10 @@
 import {Component, signal} from '@angular/core';
 import type {ButtonSize, ButtonVariant} from 'ui-core';
-import { MeButtonDirective} from 'ui-core';
+import {MeButton} from 'ui-core';
 
 @Component({
   selector: 'app-buttons',
-  imports: [MeButtonDirective],
+  imports: [MeButton],
   templateUrl: './buttons.html',
   styleUrl: './buttons.scss'
 })

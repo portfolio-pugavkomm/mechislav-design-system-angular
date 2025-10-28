@@ -1,6 +1,5 @@
-import {MEButton} from './me-button.component';
-import {ButtonSize, ButtonVariant} from './me-button.directive'
-import {MeButtonDirective} from './me-button.directive';
+import {ButtonSize, ButtonVariant} from './me-button'
+import {MeButton} from './me-button';
 
 export type {ButtonSize, ButtonVariant}
-export {MEButton, MeButtonDirective};
+export {MeButton};

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MTag, TagVariant} from 'ui-core';
+import {MeTag, TagVariant} from 'ui-core';
 
 interface LabelColor {
   label: string;
@@ -8,7 +8,7 @@ interface LabelColor {
 
 @Component({
   selector: 'app-tags',
-  imports: [MTag],
+  imports: [MeTag],
   templateUrl: './tags.html',
   styleUrl: './tags.scss'
 })

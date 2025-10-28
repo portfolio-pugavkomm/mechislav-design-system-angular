@@ -1,4 +1,4 @@
-import {MeInputDirective} from './me-input.directive';
+import {MeInput} from './me-input';
 import {Component, provideZonelessChangeDetection, signal} from '@angular/core';
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {By} from '@angular/platform-browser';
@@ -6,7 +6,7 @@ import {expect} from 'storybook/test';
 
 @Component({
   standalone: true,
-  imports: [MeInputDirective],
+  imports: [MeInput],
   template: `<input
     meInput
     [id]="id()"
@@ -25,7 +25,7 @@ class TestHostComponent {
 
 describe('MeInputDirective', () => {
   let fixture: ComponentFixture<TestHostComponent>;
-  let directive: MeInputDirective;
+  let directive: MeInput;
   let inputElement: HTMLInputElement;
   let hostComponent: TestHostComponent;
 
@@ -39,8 +39,8 @@ describe('MeInputDirective', () => {
 
     fixture = TestBed.createComponent(TestHostComponent);
     hostComponent = fixture.componentInstance;
-    const directiveEl = fixture.debugElement.query(By.directive(MeInputDirective));
-    directive = directiveEl.injector.get(MeInputDirective);
+    const directiveEl = fixture.debugElement.query(By.directive(MeInput));
+    directive = directiveEl.injector.get(MeInput);
     inputElement = directiveEl.nativeElement;
     fixture.detectChanges();
   })

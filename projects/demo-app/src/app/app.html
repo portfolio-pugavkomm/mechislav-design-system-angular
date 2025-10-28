@@ -2,13 +2,14 @@
 
 <div class="navigation-btns-container">
   @for (link of links(); track link.url) {
-    <me-button
+    <button
+      meButton
       [variant]="rla.isActive ? 'primary': 'secondary'"
       [routerLink]="link.url"
       routerLinkActive="active-link"
       [routerLinkActiveOptions]="{exact: true}"
       #rla="routerLinkActive">{{ link.label }}
-    </me-button>
+    </button>
   }
 </div>
 <router-outlet/>

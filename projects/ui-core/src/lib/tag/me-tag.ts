@@ -17,10 +17,10 @@ export type TagVariant = 'primary' | 'secondary' | 'info' | 'warning' | 'danger'
 @Component({
   selector: 'me-tag',
   imports: [],
-  templateUrl: './m-tag.component.html',
-  styleUrl: './m-tag.component.scss'
+  templateUrl: './me-tag.html',
+  styleUrl: './me-tag.scss'
 })
-export class MTag {
+export class MeTag {
   /**
    * Tag size
    */

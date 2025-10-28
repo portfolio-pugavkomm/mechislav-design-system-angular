@@ -2,9 +2,8 @@
  * Public API Surface of ui-core
  */
 
-
-export * from './lib/button/me-button.component';
-export * from './lib/tag/m-tag.component';
+export * from './lib/button/me-button';
+export * from './lib/tag/me-tag';
 export * from './lib/button'
 export * from './lib/me-input';
 export * from './lib/me-field';

@@ -1,5 +1,5 @@
 import {Component, computed, contentChild, effect} from '@angular/core';
-import {MeInputDirective} from '../me-input';
+import {MeInput} from '../me-input';
 import {NgTemplateOutlet} from '@angular/common';
 import {MeLabel} from '../me-label';
 import {MeHelp} from '../me-help';
@@ -30,7 +30,7 @@ export class MeField {
    * Reference to input field
    *
    */
-  private readonly inputRef = contentChild.required(MeInputDirective);
+  private readonly inputRef = contentChild.required(MeInput);
 
   /**
    * Reference to label
