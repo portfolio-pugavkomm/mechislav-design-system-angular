@@ -1,0 +1,40 @@
+$animationStep: 0.5s; // Animation step.
+$animationGeneralFade: $animationStep ;
+
+.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: $animationGeneralFade;
+}
+
+.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: $animationGeneralFade;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+

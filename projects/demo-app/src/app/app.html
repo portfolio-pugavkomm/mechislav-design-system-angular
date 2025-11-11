@@ -1,15 +1,36 @@
-<h1>Just demo example</h1>
+<me-drawer-container>
+  <me-navbar>
+    <me-navbar-logo logoSize="adaptive">Mechislav P.</me-navbar-logo>
+    <button meButton (click)="toggleDrawer()">Show drawer</button>
+  </me-navbar>
 
-<div class="navigation-btns-container">
-  @for (link of links(); track link.url) {
-    <button
-      meButton
-      [variant]="rla.isActive ? 'primary': 'secondary'"
-      [routerLink]="link.url"
-      routerLinkActive="active-link"
-      [routerLinkActiveOptions]="{exact: true}"
-      #rla="routerLinkActive">{{ link.label }}
-    </button>
-  }
-</div>
-<router-outlet/>
+  <me-drawer>
+    @for (link of links(); track link.url) {
+      <button
+        meButton
+        [variant]="rla.isActive ? 'linked': 'linked'"
+        [routerLink]="link.url"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{exact: true}"
+        #rla="routerLinkActive">{{ link.label }}
+      </button>
+    }
+  </me-drawer>
+  <me-drawer-content>
+    <router-outlet/>
+  </me-drawer-content>
+</me-drawer-container>
+
+<!--<div class="navigation-btns-container">-->
+<!--  @for (link of links(); track link.url) {-->
+<!--    <button-->
+<!--      meButton-->
+<!--      [variant]="rla.isActive ? 'primary': 'secondary'"-->
+<!--      [routerLink]="link.url"-->
+<!--      routerLinkActive="active-link"-->
+<!--      [routerLinkActiveOptions]="{exact: true}"-->
+<!--      #rla="routerLinkActive">{{ link.label }}-->
+<!--    </button>-->
+<!--  }-->
+<!--</div>-->
+<!--<router-outlet/>-->

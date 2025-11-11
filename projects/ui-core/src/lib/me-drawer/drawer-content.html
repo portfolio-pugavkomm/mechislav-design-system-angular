@@ -1,0 +1,12 @@
+<!--<p> S = {{ isDrawerOpen }}</p>-->
+<!--@if (isDrawerOpen) {-->
+<!--  {{ isDrawerOpen() }}-->
+<!--}-->
+
+<div
+  class="me-drawer-content"
+  [class.slide]="drawer()?.isOpen()">
+  <ng-content>
+
+  </ng-content>
+</div>

@@ -1,6 +1,6 @@
-import {Component, signal} from '@angular/core';
+import {Component, signal, viewChild} from '@angular/core';
 import {RouterModule, RouterOutlet} from '@angular/router';
-import {MeButton} from 'ui-core';
+import {MeButton, MeDrawer, MeDrawerContainer, MeDrawerContent, MeNavbar, NavbarLogo} from 'ui-core';
 
 interface LinkItem {
   label: string;
@@ -11,8 +11,14 @@ interface LinkItem {
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    MeButton,
     RouterModule,
+    MeNavbar,
+    NavbarLogo,
+    MeDrawerContainer,
+    MeDrawer,
+    MeButton,
+    MeDrawerContent,
+
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
@@ -25,5 +31,9 @@ export class App {
     {label: 'Typography', url: 'typography'},
     {label: 'Inputs', url: 'inputs'},
   ])
+  private _drawer = viewChild(MeDrawer);
 
+  toggleDrawer() {
+    this._drawer()?.toggleDrawer();
+  }
 }

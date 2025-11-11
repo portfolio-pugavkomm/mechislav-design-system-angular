@@ -1,0 +1,34 @@
+@use 'styles' as s;
+
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 s.$p-x;
+  height: s.$h-nav-desktop;
+  min-height: s.$h-nav-desktop;
+  max-height: s.$h-nav-desktop;
+  backdrop-filter: blur(30px);
+  background: linear-gradient(to right, rgba(20, 69, 33, 0.73) 6%, rgba(34, 34, 34, 0.47) 50%), linear-gradient(to right, rgba(39, 138, 71, 0.2) 6%, rgba(89, 89, 89, 0.1) 50%) left bottom / 100% 1px no-repeat;
+  border-bottom-left-radius: s.$b-r-soft;
+  border-bottom-right-radius: s.$b-r-soft;
+  z-index: s.$nav-z-index;
+  transition: height 0.5s ease-in-out, max-height 0.5s ease-in-out, min-height 0.5s ease-in-out;
+
+
+  @media screen and (max-width: s.$mobileMaxWidth) {
+    & {
+      height: s.$h-nav-mobile;
+      min-height: s.$h-nav-mobile;
+      max-height: s.$h-nav-mobile;
+    }
+  }
+}
+
+
+

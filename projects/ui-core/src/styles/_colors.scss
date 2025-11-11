@@ -76,6 +76,8 @@ $colors: map-merge($colors, ("success": map-get($colors, "primary")));
   @return map-get(map-get($colors, $color-name), $shade);
 }
 
+$backdropColor : #000000ab;
+
 .text.primary {
   color: get-color("primary", 500);
 }

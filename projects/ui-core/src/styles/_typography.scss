@@ -1,4 +1,6 @@
 @use 'tokens/variables' as v;
+@use 'tokens/platform' as p;
+@use 'animations' as a;
 // Font families names
 $font-family-base: 'Inter';
 $font-family-logo: 'Bakbak One';
@@ -256,6 +258,7 @@ p {
   color: v.$primary-success-500;
   margin: 0;
   padding: 0;
+  transition: font-size a.$animationStep ease-in-out;
 }
 
 .logo.small {
@@ -264,6 +267,16 @@ p {
 
 .logo.standard {
   font-size: v.$typography-font-size-logo-standard;
+}
+
+.logo.adaptive {
+  font-size: v.$typography-font-size-logo-standard;
+}
+
+@media screen and (max-width: p.$mobileMaxWidth) {
+  .logo.adaptive {
+    font-size: v.$typography-font-size-logo-small;
+  }
 }
 
 

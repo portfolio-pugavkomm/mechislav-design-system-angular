@@ -1,0 +1,10 @@
+@if (isOpen()) {
+  <div
+    class="me-drawer-menu"
+    [class.me-drawer-with-navbar]="containerHasNavbar()"
+    animate.enter="me-drawer-container-slide-show"
+    animate.leave="me-drawer-container-slide-hide"
+  >
+    <ng-content></ng-content>
+  </div>
+}
