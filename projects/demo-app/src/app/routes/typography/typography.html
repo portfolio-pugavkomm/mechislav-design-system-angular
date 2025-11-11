@@ -12,7 +12,7 @@
   @for (size of bodySizes(); track size) {
     @for (weight of fontWeights(); track weight) {
       <section class="section-block">
-        <h4 class="text secondary">{{ size }} - {{ weight }}</h4>
+        <h4 class="text primary">{{ size }} - {{ weight }}</h4>
         <p class="font-{{size}} font-{{weight}}">{{ typographyText() }}</p>
       </section>
     }

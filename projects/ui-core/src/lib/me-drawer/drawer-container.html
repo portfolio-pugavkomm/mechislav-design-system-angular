@@ -1,0 +1,19 @@
+@if (isDrawerOpen()) {
+  <div
+    class="me-drawer-backdrop"
+    animate.enter="me-drawer-backdrop-show"
+    animate.leave="me-drawer-backdrop-hide"
+    (click)="closeDrawer()"
+    role="button"
+    tabindex="0"
+  ></div>
+}
+
+<ng-content select="me-navbar"></ng-content>
+
+<ng-content select="me-drawer">
+</ng-content>
+
+<ng-content select="me-drawer-content">
+</ng-content>
+

@@ -1,0 +1,128 @@
+@use "styles" as s;
+
+$size-of-drawer-menu: 400px;
+
+.me-drawer-menu {
+  display: block;
+  @include s.fill;
+  z-index: s.$side-z-index;
+}
+
+.me-drawer-with-navbar {
+  margin-top: s.$h-nav-desktop;
+  transition: margin-top 0.5s ease-in-out;
+  @media screen and (max-width: s.$mobileMaxWidth) {
+    & {
+      margin-top: s.$h-nav-mobile;
+    }
+  }
+}
+
+
+.me-drawer-container-slide-hide {
+  animation-name: drawerSlideAnimationReverse;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.me-drawer-container-slide-show {
+  animation-name: drawerSlideAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.me-drawer-backdrop {
+  display: block;
+  background-color: s.$backdropColor;
+  z-index: s.$side-z-backdrop;
+  @include s.fill;
+}
+
+.me-drawer-backdrop-show {
+  animation-name: drawerBackdropFadeAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.me-drawer-backdrop-hide {
+  animation-name: drawerBackdropFadeAnimationReverse;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes drawerSlideAnimation {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes drawerSlideAnimationReverse {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes drawerBackdropFadeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes drawerBackdropFadeAnimationReverse {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.me-drawer-menu {
+  background-color: rgba(10, 19, 13, 0.8);
+  backdrop-filter: blur(15.6px);
+  max-width: $size-of-drawer-menu;
+  border-bottom-right-radius: s.$b-r-soft;
+  border-top-right-radius: s.$b-r-soft;
+  border-right: s.$bw-thin solid;
+  border-color: s.get-color("secondary", 1000);
+}
+
+.me-drawer-content {
+transform: translate3d(0, 0, 0);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.me-drawer-content.slide {
+  transform: translate3d($size-of-drawer-menu, 0, 0);
+}
+
+
+
+@keyframes slide-content-show {
+  0% {
+    transform: translate3d(0, 0, 0);
+
+  }
+
+  100% {
+
+    transform: translate3d($size-of-drawer-menu, 0, 0);
+  }
+}
